@@ -24,7 +24,7 @@ exports.saveUser = (username,firstname,lastname,pass,res) => {  //saving User to
 			}); //save Query end }
 		} else {
 			console.log("User already exists");
-			res.render('error', { message: 'Sorry  ' + username + ' ,is already registered with us !'});
+			res.render('error', { message: 'Sorry  ' + username + ' is already registered with us !'});
 		}
 	});
 }//saving User to dB end
