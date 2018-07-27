@@ -31,11 +31,11 @@ exports.saveUser = (username,firstname,lastname,pass,res) => {  //saving User to
 
 // exports.saveUser = function(username,firstname,lastname,pass,res) {  //saving User to dB open 
 // 	console.log('Saving user to mongo');
-// 			db.DashboardUsers.save({"username":username,"firstname":firstname,"lastName":lastname,"pass":pass}, function(err, saved) {
+// 			db.DashboardUsers.save({"_id":username,"username":username,"firstname":firstname,"lastName":lastname,"pass":pass}, function(err, saved) {
 // 				if( err || !saved ) {
 // 					console.log("User not saved");
 // 					console.log(err);
-// 					// res.render('error', { message: 'Sorry  ' + username + ' ,is already registered with us !', linked:'http://localhost:1010/register' });
+// 					res.render('error', { message: 'Sorry  ' + username + ' ,is already registered with us !'});
 // 					//res.send('<p style ="font:1.2em trebuchet MS;color:SteelBlue;"> Sorry  ' + username + ' ,this username is already registered at E-Wallet , Kindly try to <a href="http://localhost:1010/register"> register </a> with a different one !!</p>');		
 // 				}
 // 				else {
